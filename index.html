@@ -8,11 +8,157 @@
   <link rel="stylesheet" href="./CSS/output.css">
 </head>
 <body>
-  <header>
-    <nav>
-      
+  <header class="h-18 w-full border-b border-black/10 bg-white-shade top-0 z-50">
+    <nav class="h-full flex items-center bg-dark-blue justify-between px-4 relative">
+      <h1 class="text-white font-bold">Nexus</h1>
+
+      <!-- Desktop -->
+
+      <ul class="hidden lg:flex gap-8 items-center">
+        <li>
+          <a href="#" class="text-black/80 hover:text-blue-400 font-medium navlink-active">Home</a>
+        </li>
+        <li>
+          <a href="#" class="text-black/80 hover:text-blue-400 font-medium">Services</a>
+        </li>
+        <li>
+          <a href="#" class="text-black/80 hover:text-blue-400 font-medium">contact</a>
+        </li>
+        <li>
+          <a href="#" class="text-black/80 hover:text-blue-400 font-medium">About</a>
+        </li>
+      </ul>
+
+      <!-- Mobile -->
+
+      <div class="lg:hidden">
+        <button><i class="fa-solid fa-bars-staggered"></i></button>
+
+        <ul class="absolute top-full left-0 bg-white/10 border-t border-r border-black/10 w-3/5 max-w-60 h-[calc(100vh-45rem)] hidden flex-col gap-5 justify-center items-center">
+        <li>
+          <a href="#" class="text-black/80 hover:text-blue-400 font-medium navlink-active">Home</a>
+        </li>
+        <li>
+          <a href="#" class="text-black/80 hover:text-blue-400 font-medium">Services</a>
+        </li>
+        <li>
+          <a href="#" class="text-black/80 hover:text-blue-400 font-medium">contact</a>
+        </li>
+        <li>
+          <a href="#" class="text-black/80 hover:text-blue-400 font-medium">About</a>
+        </li>
+      </ul>
+
+
+      </div>
+
     </nav>
   </header>
+
+  <!-- Hero section -->
+  <main>
+    <section class="w-full h-[calc(100vh-4.5rem)] pt-20 px-14 bg-dark-blue flex flex-col md:flex-row lg:flex-row items-center justify-between gap-8">
+      
+      <div class="h-full w-full flex flex-col gap-4 2xl:gap-10  ">
+        <h1 class="text-white font-bold text-4xl lg:text-5xl 2xl:text-7xl w-9/10 max-w-120 2xl:max-w-180">Build Your Digital Future</h1>
+
+        <p class="text-white w-9/10 max-w-120 2xl:max-w-160 text-sm lg:text-xl 2xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae totam ex possimus eum aspernatur laborum quas perspic</p>
+
+        <div class="flex flex-col md:flex-row lg:flex-row gap-2">  
+         <a href="#" class="bg-light-blue text-white py-3 px-12 rounded-2xl">Start Your Journey</a> 
+         <a href="#" class="border border-black text-white py-3 px-10 rounded-2xl">Learn More</a>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-2/5 md:w-1/2 flex overflow-hidden">
+        <img src="./Images/hero-image.png" alt="a graphical image of a pc" class="w-full max-w-lg h-auto">
+      </div>
+       
+    </section>
+
+    <section class="w-full bg-dark-blue/96 py-16">
+      <div class="w-9/10 max-w-7xl mx-auto flex flex-col gap-6">
+        <div class="flex flex-col gap-2 items-center">
+          <h2 class="font-bold text-white text-2xl lg:text-3xl">Our Services</h2>
+          <p class="text-white/60 font-medium text-sm text-center w-9/10 max-w-120 2xl:text-lg">
+           We provide comprehensive consulting solution tailored to your business needs
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="flex flex-col gap-4 border border-black/10 py-8 px-4 rounded-2xl shadow-xl bg-white-shade">
+           <span class="self-start w-10 h-10 flex justify-center items-center bg-light-blue rounded-lg">
+            <i class="fa-solid fa-code"></i>
+           </span>
+
+           <h3 class="font-bold text-white"> Web Development</h3>
+           <p class="text-sm text-white/60">Custom website and applications built with modern technologies for optional performance</p>
+          </div>
+
+          <div class="flex flex-col gap-4 border border-black/10 py-8 px-4 rounded-2xl shadow-xl bg-white-shade">
+           <span class="self-start w-10 h-10 flex justify-center items-center bg-green rounded-lg">
+           <i class="fa-solid fa-mobile-screen"></i>
+           </span>
+
+           <h3 class="font-bold text-white">Mobile Apps</h3>
+           <p class="text-sm text-white/60">Native and cross-platform mobile applications that deliver exceptional user experiences</p>
+         </div>
+
+          <div class="flex flex-col gap-4 border border-black/10 py-8 px-4 rounded-2xl shadow-xl bg-white-shade">
+           <span class="self-start w-10 h-10 flex justify-center items-center bg-purple rounded-lg">
+           <i class="fa-solid fa-chart-line"></i>
+           </span>
+
+           <h3 class="font-bold text-white" >Digital Marketing</h3>
+           <p class="text-sm text-white/60">Strategic marketing campaign that boost your online presence and drive conversion</p>
+         </div>
+       </div>
+      </div>
+      
+    </section>
+
+    <section class="bg-white w-full py-16">
+      <div class="w-9/10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 h-auto">
+        <article class="flex flex-col gap-5 w-full md:w-1/2">
+          <h2 class="font-bold text-lg md:text-xl lg:text-2xl 2xl:text-4xl">About Skyline Consulting</h2>
+
+          <p class="lg:text-lg 2xl:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolorum qui pariatur. Obcaecati adipisci distinctio vero a consectetur aspernatur libero aliquam, quasi illo nemo, animi totam similique nobis officiis placeat?
+          </p>
+
+          <p class="lg:text-lg 2xl:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, accusantium architecto eligendi dolore molestias odio similique nobis reiciendis voluptatibus vero molestiae fuga in, deleniti, commodi neque. Repudiandae labore ex nesciunt!
+          </p>
+
+          <div class="flex gap-2 sm:gap-4">
+          <p class="flex flex-col gap-1 items-center text-center">
+            <span class="font-bold text-pri-col md:text-lg lg:text-2xl 2xl:text-3xl">500+</span>
+            <span class="text-xs md:text-base font-medium text-black/70">Clients Served</span>
+          </p>
+
+          <p  class="flex flex-col gap-1 items-center text-center">
+            <span class="font-bold text-pri-col md:text-lg lg:text-2xl 2xl:text-3xl">10+</span>
+            <span class="text-xs md:text-base font-medium text-black/70">Years Experience</span>
+          </p>
+
+          <p  class="flex flex-col gap-1 items-center text-center">
+            <span class="font-bold text-pri-col md:text-lg lg:text-2xl 2xl:text-3xl">95%</span>
+            <span class="text-xs md:text-base font-medium text-black/70">Success Rate</span>
+          </p>
+
+        </div>
+        </article>
+
+        <div class="w-full md:w-1/2 min-h-60 rounded-2xl overflow-hidden">
+          <img src="./images/second image.jpg" alt="an image of me" class="w-full h-full object-cover aspect-4/3">
+        </div>
+
+       
+      </div>
+    </section>
+
+
+  </main>
 
 </body>
 </html>
